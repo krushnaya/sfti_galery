@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!---css от bootstrap---->
+    <link rel="stylesheet" href="source/styles/mycss.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="source/styles/video.css">
+    <style>
+        body {
+            font-family: 'Tangerine', serif;
+            font-size: 48px;
+        }
+    </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="source/files/logotip/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="source/files/logotip/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="source/files/logotip/favicon-16x16.png">
+    <link rel="manifest" href="source/files/logotip/site.webmanifest">
+
+    <title>galery</title>
+</head>
+
+<body>
+    <!-- <style>
+        input:checked~.gal_body {
+            display: block;
+        }
+    </style> -->
+    <header>
+        <nav class="navbar bg-body-tertiary"> <!---навигационная панель---->
+            <div class="container-fluid">
+                <div class="logo"><a href="https://www.sphti.ru/?ysclid=m67w8fncjk733755876"><img
+                            src="source/images/logo.webp" alt=""></a></div>
+                <a class="navbar-brand"><span class="lg">Галерея</span> </a>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+                    <button class="btn btn-outline-success" type="submit">Поиск</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="bdvid">
+            <video src="source/files/blue_plate.mov" type="video/mp" autoplay muted loop></video>
+            <div class="effect"></div>
+            <div class="videotext">
+                <p>Vt and Sa</p>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-mg-12 leftbar"> <!---левая боковая панель---->
+                    <a href="event1.php">
+                        <div class="event">
+                            <p>мероприятие 1</p>
+                        </div>
+                    </a>
+                    <a href="event2.php" class="ev2">
+                        <div class="event">
+                            <p>мероприятие 2</p>
+                        </div>
+                    </a>
+                    <!-- <input type="checkbox" id="check">
+                    <label for="check">мероприятие 2</label>
+                    <div class="gal_body"><img src="source/images/i.jpg" alt="">
+                        <img src="source/images/i.jpg" alt=""></div> -->
+                    <a href="event3.php">
+                        <div class="event">
+                            <p>мероприятие 3</p>
+                        </div>
+                    </a>
+                    <a href="event4.php">
+                        <div class="event">
+                            <p>мероприятие 4</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-lg-8 gal_body">
+                    <div class="row ">
+                        <div id="carouselExampleIndicators" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button id="bt" type="button" data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="0" class="active " aria-current="true"
+                                    aria-label="Slide 1"></button>
+                                <button id="bt" type="button" data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button id="bt" type="button" data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card d-block w-100" style="width: 18rem;">
+                                        <img src="source/images/i.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <a href="event1.php" class="img_carousel">
+                                                <p class="card-text">мероприятие 1: завоевали кубок первой степени</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card d-block w-100" style="width: 18rem;">
+                                        <img src="source/images/moonlight-2560-x-1440-picture-0lgoc2bovhenq76m.jpg"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <a href="event2.php" class="img_carousel">
+                                                <p class="card-text">мероприятие 2: окунитесь в воспоминания</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card d-block w-100" style="width: 18rem;">
+                                        <img src="source/images/i.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <a href="event3.php" class="img_carousel">
+                                                <p class="card-text">мероприятие 3: конференция в зале</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Предыдущий</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Следующий</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!--                     
+                    <div class="row " >
+                        <div class="col-lg-4 col-md-12">
+                            <a href="source/images/i.jpg"><img src="source/images/i.jpg" class="img-fluid"
+                                    alt="..."></a>
+                            <a href="source/images/i.jpg"><img src="source/images/i.jpg" class="img-fluid"
+                                    alt="..."></a>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <a href="source/images/i.jpg"><img src="source/images/i.jpg" class="img-fluid"
+                                    alt="..."></a>
+                            <a href="source/images/i.jpg"><img src="source/images/i.jpg" class="img-fluid"
+                                    alt="..."></a>
+                            <a href="source/images/i.jpg"><img src="source/images/i.jpg" class="img-fluid"
+                                    alt="..."></a>
+                            <a href="source/images/i.jpg"><img src="source/images/i.jpg" class="img-fluid"
+                                    alt="..."></a>
+                            <a href="source/images/i.jpg"><img src="source/images/i.jpg" class="img-fluid"
+                                    alt="..."></a>
+                            <a href="source/images/i.jpg"><img src="source/images/i.jpg" class="img-fluid"
+                                    alt="..."></a>
+                            <a href="source/images/i.jpg"><img src="source/images/i.jpg" class="img-fluid"
+                                    alt="..."></a><a href="source/images/i.jpg"><img src="source/images/i.jpg"
+                                    class="img-fluid" alt="..."></a><a href="source/images/i.jpg"><img
+                                    src="source/images/i.jpg" class="img-fluid" alt="..."></a><a
+                                href="source/images/i.jpg"><img src="source/images/i.jpg" class="img-fluid"
+                                    alt="..."></a><a href="source/images/i.jpg"><img src="source/images/i.jpg"
+                                    class="img-fluid" alt="..."></a><a href="source/images/i.jpg"><img
+                                    src="source/images/i.jpg" class="img-fluid" alt="..."></a><a
+                                href="source/images/i.jpg"><img src="source/images/i.jpg" class="img-fluid"
+                                    alt="..."></a><a href="source/images/i.jpg"><img src="source/images/i.jpg"
+                                    class="img-fluid" alt="..."></a><a href="source/images/i.jpg"><img
+                                    src="source/images/i.jpg" class="img-fluid" alt="..."></a><a
+                                href="source/images/i.jpg"><img src="source/images/i.jpg" class="img-fluid"
+                                    alt="..."></a><a href="source/images/i.jpg"><img src="source/images/i.jpg"
+                                    class="img-fluid" alt="..."></a><a href="source/images/i.jpg"><img
+                                    src="source/images/i.jpg" class="img-fluid" alt="..."></a><a
+                                href="source/images/i.jpg"><img src="source/images/i.jpg" class="img-fluid"
+                                    alt="..."></a><a href="source/images/i.jpg"><img src="source/images/i.jpg"
+                                    class="img-fluid" alt="..."></a><a href="source/images/i.jpg"><img
+                                    src="source/images/i.jpg" class="img-fluid" alt="..."></a><a
+                                href="source/images/i.jpg"><img src="source/images/i.jpg" class="img-fluid"
+                                    alt="..."></a>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <a href="source/images/moonlight-2560-x-1440-picture-0lgoc2bovhenq76m.jpg">
+                                <img src="source/images/moonlight-2560-x-1440-picture-0lgoc2bovhenq76m.jpg"
+                                    class="img-fluid" alt="...">
+                            </a>
+                        </div>
+                    </div> -->
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 floor text-center footer-text">
+                    <p>Год создания:2025</p>
+                </div>
+                <div class="col-lg-4 col-md-12 floor text-center footer-text">
+                    <p>студент группы ПИ-14д</p>
+                </div>
+                <div class="col-lg-4 col-md-12 floor text-center footer-text">
+                    <p>контайтной информации нет</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
